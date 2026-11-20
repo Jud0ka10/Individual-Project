@@ -1,3 +1,264 @@
-body.fp {
-    color:aquamarine;
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    /*background: black;*/
+}
+
+span {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 540px;
+}
+
+.forms {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37) ;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.forms h2 {
+    font-size: 35px;
+    margin-top: 10%;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.forms p {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+
+
+
+}
+
+
+.forms form {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 350px;
+    
+}
+
+.forms form .inline {
+    display: block;
+    justify-content: space-between;
+    
+}
+
+.forms form .inline > div {
+    color: #bcbac2;
+    font-size: 35px;
+}
+
+.forms form .inline input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    background: rgba(255,255,255,0.05);
+    margin-bottom: 20px;
+    outline: none;
+    display: block;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.forms form .inline input:focus {
+    border-color: #FFD700;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.forms form .inline input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.forms form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 18px;
+    border-radius: 12px;
+    display: block;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #FFD700;
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.forms form button:hover {
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    transform: translate(-3px);
+}
+
+
+.wrapper {
+  /*  background: #A4041E;
+    /*background: linear-gradient(315deg, #A4041E 0%, #010101 52%, #010101 100%);*/
+    width: 100%;
+    overflow-x: hidden;
+}
+
+span.hi,h2 {
+    background: linear-gradient(90deg, #FFD700, #FF8C00, #FF1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background: #050505;
+    pointer-events: none;
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.8;
+    animation: float 10s infinite alternate ease-in-out;
+
+}
+
+.orb-1 {
+    width: 400px;
+    height: 400px;
+    background: #A4041E;
+    top:-10%;
+    left: -10%;
+    animation-duration: 12s;
+}
+
+.orb-2 {
+    width: 350px;
+    height: 350px;
+    background: #FFD700;
+    bottom: -10%;
+    right: -5%;
+    animation-duration: 15s;
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    width: 450px;
+    height: 450px;
+    background: #4a0e1b;
+    top:30%;
+    left:40%;
+    animation-duration: 18s;
+    animation-delay: -2s;
+}
+
+@keyframes float {
+    0% {transform: translate(0,0) scale(1);}
+    50% {transform: translate(80px, 30px) scale(1.2);}
+    100% {transform: translate(-50px,-80px) scale(0.9);}
+}
+
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+}
+
+.blob-1 {
+    width: 50vw;
+    height: 50vw;
+    background: #A4041E;
+    top: 10%;
+    left: 10%;
+    animation: moveBlob 10s infinite alternate ease-in-out;
+}
+
+.blob-2 {
+    width: 40vw;
+    height: 40vw;
+    bottom: -10%;
+    right: -10%;
+    animation: moveBlob2 12s infinite alternate ease-in-out;
+    animation-delay: -5s;
+
+}
+
+@keyframes moveBlob {
+    0% {transform: translate(0,0) scale(1);}
+    100% {transform: translate(20%, 30%) scale(1.2);}
+}
+
+@keyframes moveBlob2 {
+    0% {transform: translate(0,0) scale(1);}
+    100% {transform: translate(-30%,-20%) scale(1.3);}
+}
+
